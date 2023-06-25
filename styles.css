@@ -1,0 +1,55 @@
+:root{
+    --background: rgb(52, 166, 251);
+    --lava: rgb(255, 100, 100);
+    --wall: rgb(255, 255, 255);
+    --coin: rgb(241, 229, 89);
+    --player: rgb(64, 64, 64);
+    --lostPlayer: rgb(160, 64, 64);
+    --white: rgb(255, 255, 255);
+    --black: rgb(0, 0, 0);
+}
+
+.background{
+    background: var(--background);
+    table-layout: fixed;
+    border-spacing: 0;
+}
+
+.backgound td{
+    padding: 0;
+}
+
+.lava{
+    background: var(--lava);
+}
+
+.wall{
+    background-color: var(--wall);
+}
+
+.actor{
+    position: absolute;
+}
+
+.coin{
+    background: var(--coin);
+}
+
+.player{
+    background: var(--player);
+}
+
+.lost .player{
+    background: var(--lostPlayer);
+}
+
+.won .player{
+    box-shadow: -4px -7px -8px var(--white), 4px -7px 8px var(--white);
+}
+
+.game{
+    overflow: hidden;
+    max-width: 600px;
+    max-height: 480px;
+    position: relative;
+}
